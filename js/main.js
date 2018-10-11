@@ -159,21 +159,30 @@ createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
 
   const image = document.createElement('img');
+  const imgWrap = document.createElement('div');
+  imgWrap.classList.add('wrapper');
   image.className = 'restaurant-img';
   image.alt = restaurant.name;
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
-  li.append(image);
+
+  li.append(imgWrap);
+  imgWrap.append(image);
 
   const name = document.createElement('h1');
   name.innerHTML = restaurant.name;
   li.append(name);
 
   const neighborhood = document.createElement('p');
+  neighborhood.classList.add('neighborhood');
   neighborhood.innerHTML = restaurant.neighborhood;
   li.append(neighborhood);
 
   const address = document.createElement('p');
-  address.innerHTML = restaurant.address;
+  address.classList.add('address');
+  let addressVal = restaurant.address;
+  //swap out first comma and break address line
+  let newAddress = addressVal.replace(',', '<br>');
+  address.innerHTML = newAddress;
   li.append(address);
 
   const more = document.createElement('a');

@@ -35,3 +35,5 @@ https://www.youtube.com/watch?v=BfL3pprhnms
 
 //create requests to cache
 https://developer.mozilla.org/en-US/docs/Web/API/Cache/add
+
+https://alexandroperez.github.io/mws-walkthrough/?1.16.making-app-images-responsive
