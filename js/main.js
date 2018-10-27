@@ -172,10 +172,16 @@ createRestaurantHTML = (restaurant) => {
   name.innerHTML = restaurant.name;
   li.append(name);
 
+  //New div to hold all Listing information  - .listingData
+  //so they could be styled and space together
+
+  const listingData = document.createElement('div');
+  listingData.classList.add('data');
+
   const neighborhood = document.createElement('p');
   neighborhood.classList.add('neighborhood');
   neighborhood.innerHTML = restaurant.neighborhood;
-  li.append(neighborhood);
+  listingData.append(neighborhood);
 
   const address = document.createElement('p');
   address.classList.add('address');
@@ -183,12 +189,16 @@ createRestaurantHTML = (restaurant) => {
   //swap out first comma and break address line
   let newAddress = addressVal.replace(',', '<br>');
   address.innerHTML = newAddress;
-  li.append(address);
+  listingData.append(address);
+
+  li.append(listingData);
 
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
   li.append(more)
+
+
 
   return li
 }

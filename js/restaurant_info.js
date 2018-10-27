@@ -110,11 +110,13 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
     const row = document.createElement('tr');
 
     const day = document.createElement('td');
+    day.classList.add('day');
     day.innerHTML = key;
     row.appendChild(day);
 
     const time = document.createElement('td');
-    time.innerHTML = operatingHours[key];
+    const timeBreak = operatingHours[key];
+    time.innerHTML = timeBreak.replace(',', '<br>');
     row.appendChild(time);
 
     hours.appendChild(row);
