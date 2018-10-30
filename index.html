@@ -21,13 +21,13 @@
     <section id="map-container">
       <div id="map"></div>
     </section>
-    <section>
+    <section role="contentinfo" aria-label="Restaurants in the Area">
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select id="neighborhoods-select" aria-label="Filtered by Neighborhoods" aria-controls="restaurants-list" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select id="cuisines-select" aria-label="Filtered by Cuisines" aria-controls="restaurants-list" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>

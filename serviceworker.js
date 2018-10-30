@@ -5,11 +5,13 @@ self.addEventListener('install', function(event) {
       return cache.addAll(
         ['/',
         'css/styles.css',
+        'img/',
         'js/main.js',
         'js/dbhelper.js',
         'js/restaurant_info.js',
         'index.html',
-        'restaurant.html']
+        'restaurant.html',
+        '/restaurant.html?id=1']
       );
     })
   )
