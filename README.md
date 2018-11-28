@@ -41,3 +41,6 @@ https://alexandroperez.github.io/mws-walkthrough/?1.16.making-app-images-respons
 
 calc css -
 https://www.w3schools.com/cssref/func_calc.asp
+
+sw -
+https://developers.google.com/web/fundamentals/primers/service-workers/
