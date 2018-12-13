@@ -1,3 +1,60 @@
+* [Running/Playing the game](#howtoplay)
+* [Scoring](#scoring)
+* [Dependencies](#dependencies)
+* [Project Instructions](#instructions)
+* [Contributing](#contributing)
+
+## Description
+
+Reviews of New York restaurant based on location and quisine. Includes a map displaying location of the restaurant.
+
+### What do I do from here?
+
+In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer.
+
+In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+
+2. With your server running, visit the site: `http://localhost:8000`,
+
+
+
+## Service worker
+
+*
+
+## Dependencies
+
+* starter files provided by Udacity
+* images (provided by udacity preojects)
+* Mapbox - map used to display restaurant locations.
+* https://leafletjs.com/ - javascript library for interactive maps.
+* gulp - used to watch and render the sass files.
+* Sass - simplfy the css for multiple screen sizes.
+
+## Resources - files I referenced
+
+* Arcade Game Walkthrough series by Mathew Conrad at
+https://matthewcranford.com/
+
+* Adding images to divs
+https://stackoverflow.com/questions/7802744/adding-an-img-element-to-a-div-with-javascript
+
+## Project Instructions
+
+Udacity -
+
+Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+
+For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+
+## Contributing
+
+Udacity -
+
+This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+
+
+
 # Mobile Web Specialist Certification Course
 ---
 #### _Three Stage Course Material Project - Restaurant Reviews_
